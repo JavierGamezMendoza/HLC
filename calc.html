@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Practica 1
+        </title> 
+        <link rel="stylesheet" href="estilocalc.css">
+        
+        
+    </head>
+    <body >
+    <script src="script.js"></script>
+
+    <div id="calc">
+            <h1 class="Enunciado">CALCULADORA</h1>
+            <h2>(CUTRE)</h2>
+        <p>
+        <img id="foto" src="fotos/calc01.png">
+        </p>
+            <input placeholder="Numero 1" class="campo" type="number" id=numero1 class="email">
+        <p>
+            <input placeholder="Numero 2" class="campo" type="number" id=numero2 >
+        </p>
+        <p>
+            <input placeholder="Resultado" class="campo resultado" type="number" id="resultado" readonly></input>
+        </p>
+        <p>
+            <input placeholder="Nota" class="campo nota" type="text" id="nota"></input>
+        </p>
+        <p>
+            <input placeholder="Nombre" class="campo nombre" type="text" id="nombres"></input>
+        </p>
+        <p>
+            <input placeholder="Modificador" class="campo modificador" type="number" id="modificador"></input>
+        </p>
+        
+        <p id="evaluacion">
+        </p>
+        <p id="nombrefinal">
+        </p>
+        
+        <p id="cuentaatras">
+        </p>
+        <p id="frasenombre">
+        </p>
+        <button class="boton" onclick= "resultado.value = multiplica(numero1.value, numero2.value)" > Multiplicar </button>
+        <button class="boton" onclick="resultado.value = divide(numero1.value, numero2.value)"> Dividir </button>
+        <button class="boton" onclick="resultado.value = suma(numero1.value, numero2.value)"> Sumar </button>
+        <button class="boton" onclick="resultado.value = resta(numero1.value, numero2.value)"> Restar </button>
+        <button class="boton" onclick="resultado.value = eleva(numero1.value, numero2.value)"> Elevar </button>
+        <button class="boton" onclick="resultado.value = raiz(numero1.value, numero2.value)"> Raíz </button>
+        <button class="boton" onclick="resultado.value = maximo(numero1.value, numero2.value)"> Máximo </button>
+        <button class="boton" onclick="resultado.value = minimo(numero1.value, numero2.value)"> Mínimo </button>
+        <button class="boton" onclick="resultado.value = restaurar()"> Restaurar </button>
+        <button class="boton" onclick="evaluacion.innerHTML = evaluar(nota.value)"> Nota </button>
+        <button class="boton" onclick="nombrefinal.innerHTML = nombre(nombres.value)"> Nombre </button>
+        <button class="boton" onclick="cuenta(numcuenta, modificador.value)"> Cuenta </button>
+        <button class="boton" onclick="frase(nombres.value)"> Cuenta </button>
+        <button class="boton" onclick="(nombres.value)"> Cuenta </button>
+        </p>
+
+        
+        
+
+
+    </div>
+
+
+       
+        
+
+    
+    
+    </body>
+</html> 
