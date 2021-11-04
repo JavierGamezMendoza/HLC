@@ -6,51 +6,25 @@
         Practica 1
         </title> 
         <link rel="stylesheet" href="estilocalc.css">
-        
-        
     </head>
-    <body >
+    <body onload="carga()">
     <script src="ahorcado.js"></script>
 
     <div id="calc">
             <h1 class="Enunciado">AHORCADO</h1>
             <h2>(CUTRE)</h2>
-        
-        <p>
-            <input placeholder="Palabra" class="campo" type="password" id=palabra>
-        </p>
-        <p>
-            <input placeholder="Letra" class="campo" type="text" id=letra>
-        </p>
- 
-      
-        <p>
-        <button class="boton" onclick="letras(palabra.value, letra.value)" > Letras </button>
-    
-        </p>
-        <p>
-            <button class="boton" onclick="continuar(palabra.value, letra.value)" > Continuar </button>
-        
-            </p>
-        
-        <p id="parrafo">
-
         </p>
         <p id="parrafo2">
-
         </p>
-
-        
-        
-
-
+        <!-- <p>
+            <input placeholder="Palabra" class="campo" type="password" id=palabra>
+        </p> -->
+        <p>
+            <input placeholder="Letter" class="campo" type="text" id=letra>
+        </p>
+        <p>
+        <button class="boton" onclick="letras(letra.value)" > Guess </button>
+        </p>
     </div>
-
-
-       
-        
-
-    
-    
     </body>
 </html> 

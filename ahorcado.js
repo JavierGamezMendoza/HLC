@@ -1,26 +1,41 @@
+// Esta función carga una palabra aleatoria al entrar en la página.
+
 function carga(){
-    var items = Array("piscina","croqueta","heliche","seguridad");
-    var item = items[Math.floor(Math.random()*items.length)];
-    var str= "*";
-    cifrado= items[item];
-    parrafo2.innerHTML= str.repeat(cifrado.length);
-    alert("cifrado");
+    items = Array("piscina","croqueta","heliche","seguridad");
+    item = items[Math.floor(Math.random()*items.length)];
+    str= "*";
+    repeticion = str.repeat(item.length);
+    parrafo2.innerHTML = str.repeat(item.length);
+    parrafo = parrafo2.innerHTML;
 }
 
-document.onload = carga;
 
 
+function letras(letra){
+    for(x=0;x<=item.length-1;x++){
+            if(item[x]==letra){
+                    parrafo[x] = letra;
+                    alert(parrafo[x]);
+            
+            }else{
 
-function letras(palabra, letras){
-   
-    // for(x=0;x<=palabra.length-1;x++){
-    //         if(palabra[x]==letras){
-    //             parrafo2.innerHTML = parrafo2.innerHTML + palabra[x];
-    //         }else{
-    //             parrafo2.innerHTML = parrafo2.innerHTML + "*";
-    //         }
-    //     resultado = parrafo2.innerHTML;
-    // }
- }
+            }
+
+            
+    }
+// parrafo2.innerHTML="";
+//     for(x=0;x<=item.length-1;x++){
+//         if(item[x]==letra){
+//             parrafo = parrafo + letra;
+//         }else if(parrafo[x]=="*"){
+//             parrafo = parrafo + "*";
+//         }else{
+//             parrafo = parrafo + parrafo[x];
+//         }
+
+//     }
+//     parrafo2.innerHTML = parrafo;
+}
+
 
 
