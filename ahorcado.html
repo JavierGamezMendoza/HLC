@@ -7,7 +7,7 @@
         </title> 
         <link rel="stylesheet" href="estilocalc.css">
     </head>
-    <body onload="carga()">
+    <body onload = carga()>
     <script src="ahorcado.js"></script>
 
     <div id="calc">
@@ -20,10 +20,18 @@
             <input placeholder="Palabra" class="campo" type="password" id=palabra>
         </p> -->
         <p>
-            <input placeholder="Letter" class="campo" type="text" id=letra>
+            <input placeholder="Letter" class="campo" type="text" id=letra maxlength="1">
         </p>
         <p>
-        <button class="boton" onclick="letras(letra.value)" > Guess </button>
+            <button class="boton" onclick="letras(letra.value)"> Guess </button>
+        </p>
+        </p>
+            <p id="parrafo3">
+        </p>
+        </p>
+        <p id="parrafoletras">
+        </p>
+        <p id="parraforeloj">
         </p>
     </div>
     </body>
